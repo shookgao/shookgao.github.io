@@ -6,23 +6,17 @@
     
 
     
-    <title>SKBlog</title>
+    <title>标签：: ffmpeg | SKBlog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="" />
-    
-    <meta name="description" content="FFmpeg学习笔记语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4">
-<meta property="og:type" content="article">
+    <meta property="og:type" content="website">
 <meta property="og:title" content="SKBlog">
-<meta property="og:url" content="https://shookgao.github.io/2018/05/29/ffmpeg/index.html">
+<meta property="og:url" content="https://shookgao.github.io/tags/ffmpeg/index.html">
 <meta property="og:site_name" content="SKBlog">
-<meta property="og:description" content="FFmpeg学习笔记语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-14T06:37:22.736Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SKBlog">
-<meta name="twitter:description" content="FFmpeg学习笔记语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4">
     
 
     
@@ -63,7 +57,7 @@
                     </h1>
                     
                         <h2 class="subtitle-wrap">
-                            <p class="subtitle">My Blog</p>
+                            <p class="subtitle">比昨天的自己更好一点儿...</p>
                         </h2>
                     
                 </div>
@@ -135,118 +129,82 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    未分类
+    <i class="icon fa fa-tag"></i>标签：: <em>ffmpeg</em>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-ffmpeg" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <a href="/2018/05/29/ffmpeg/" class="article-date">
-            <time datetime="2018-05-29T15:51:10.104Z" itemprop="datePublished">2018-05-29</time>
-        </a>
-    </div>
+                            
 
-                
+    
+    
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
             </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
         
+        <a href="/2018/05/30/ffmpeg/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
         
-        <div class="article-entry" itemprop="articleBody">
-            <h1 id="FFmpeg学习笔记"><a href="#FFmpeg学习笔记" class="headerlink" title="FFmpeg学习笔记"></a>FFmpeg学习笔记</h1><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
-<li>常规</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4</span><br></pre></td></tr></table></figure>
-<ul>
-<li>批处理</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&#123;f%.*&#125;.mp4; done;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>合并</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 先建立filelist.txt文件，文件内每个`file "a.avi"`占一行，有多少填多少，然后执行</span><br><span class="line">ffmpeg -f concat -i filelist.txt -c copy a.mp4</span><br></pre></td></tr></table></figure>
-        </div>
-        <footer class="article-footer">
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://shookgao.github.io/2018/05/30/ffmpeg/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
             
+            </div>
+            <div class="date"><time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/30/ffmpeg/">FFmpeg 学习笔记</a>
+        </h1>
+    
 
+        <p class="article-excerpt">
+            语法
+常规
 
+1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4
 
-    <a data-url="https://shookgao.github.io/2018/05/29/ffmpeg/" data-id="cjhrv0pnt00015ovloo4dun78" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
+批处理
 
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
+1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&#123;f%.*&#125;.mp4; done;
 
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-        </footer>
+合
+        </p>
     </div>
 </article>
-
-    <section id="comments">
     
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
+        </div>
     
-    </section>
+
+
+    </div></section>
+
 
 
                         </div>
@@ -308,29 +266,6 @@
         </ul>
     </div>
     
-        
-<nav id="article-nav">
-    
-        <a href="/2018/05/29/git/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            (no title)
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-    
-    
-        <a href="/2018/05/29/aria2/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title"></p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
-    
-</nav>
-
-    
     <div class="widgets-container">
         
             
@@ -346,7 +281,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/05/29/git/" class="thumbnail">
+                            <a href="/2018/05/30/ffmpeg/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -358,15 +293,15 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/git/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.115Z" itemprop="datePublished">2018-05-29</time></p>
+                            <p class="item-title"><a href="/2018/05/30/ffmpeg/" class="title">FFmpeg 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/05/29/ffmpeg/" class="thumbnail">
+                            <a href="/2018/05/30/nedb/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -378,68 +313,8 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/ffmpeg/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.104Z" itemprop="datePublished">2018-05-29</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/29/aria2/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/aria2/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.092Z" itemprop="datePublished">2018-05-29</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/29/nedb/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/nedb/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.078Z" itemprop="datePublished">2018-05-29</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/29/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:30:59.837Z" itemprop="datePublished">2018-05-29</time></p>
+                            <p class="item-title"><a href="/2018/05/30/nedb/" class="title">NeDB 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time></p>
                         </div>
                     </li>
                 
@@ -455,16 +330,30 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">5</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
 
             
                 
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NeDB/">NeDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习笔记/">学习笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
 
             
                 
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/NeDB/" style="font-size: 10px;">NeDB</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/学习笔记/" style="font-size: 20px;">学习笔记</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a>
+        </div>
+    </div>
+
 
             
                 
@@ -510,13 +399,11 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://shookgao.github.io/2018/05/29/ffmpeg/';
-    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>

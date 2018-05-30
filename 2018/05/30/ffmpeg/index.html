@@ -6,23 +6,24 @@
     
 
     
-    <title>Hello World | SKBlog</title>
+    <title>FFmpeg 学习笔记 | SKBlog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="" />
+        <meta name="keywords" content="ffmpeg,学习笔记" />
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4; done;  合">
+<meta name="keywords" content="ffmpeg,学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://shookgao.github.io/2018/05/29/hello-world/index.html">
+<meta property="og:title" content="FFmpeg 学习笔记">
+<meta property="og:url" content="https://shookgao.github.io/2018/05/30/ffmpeg/index.html">
 <meta property="og:site_name" content="SKBlog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4; done;  合">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-29T15:30:59.838Z">
+<meta property="og:updated_time" content="2018-05-30T03:27:20.885Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="FFmpeg 学习笔记">
+<meta name="twitter:description" content="语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4; done;  合">
     
 
     
@@ -63,7 +64,7 @@
                     </h1>
                     
                         <h2 class="subtitle-wrap">
-                            <p class="subtitle">My Blog</p>
+                            <p class="subtitle">比昨天的自己更好一点儿...</p>
                         </h2>
                     
                 </div>
@@ -139,14 +140,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-ffmpeg" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Hello World
+        FFmpeg 学习笔记
         </h1>
     
 
@@ -156,33 +157,40 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/05/29/hello-world/" class="article-date">
-            <time datetime="2018-05-29T15:30:59.837Z" itemprop="datePublished">2018-05-29</time>
+        <a href="/2018/05/30/ffmpeg/" class="article-date">
+            <time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time>
         </a>
     </div>
 
                 
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/ffmpeg/">ffmpeg</a>, <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
+    </div>
+
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
+<li>常规</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4</span><br></pre></td></tr></table></figure>
+<ul>
+<li>批处理</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> `ls *.avi`; <span class="keyword">do</span> ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac <span class="variable">$&#123;f%.*&#125;</span>.mp4; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>合并</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先建立filelist.txt文件，文件内每个`file "a.avi"`占一行，有多少填多少，然后执行</span></span><br><span class="line">ffmpeg -f concat -i filelist.txt -c copy a.mp4</span><br></pre></td></tr></table></figure>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://shookgao.github.io/2018/05/29/hello-world/" data-id="cjhrv0pny00035ovlboirluqd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://shookgao.github.io/2018/05/30/ffmpeg/" data-id="cjhsnii660000s4vlumv92nbf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -319,16 +327,12 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/05/29/nedb/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            (no title)
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
+        <a href="/2018/05/30/nedb/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">NeDB 学习笔记</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
     
 </nav>
 
@@ -348,7 +352,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/05/29/git/" class="thumbnail">
+                            <a href="/2018/05/30/ffmpeg/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -360,15 +364,15 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/git/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.115Z" itemprop="datePublished">2018-05-29</time></p>
+                            <p class="item-title"><a href="/2018/05/30/ffmpeg/" class="title">FFmpeg 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/05/29/ffmpeg/" class="thumbnail">
+                            <a href="/2018/05/30/nedb/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -380,68 +384,8 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/ffmpeg/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.104Z" itemprop="datePublished">2018-05-29</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/29/aria2/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/aria2/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.092Z" itemprop="datePublished">2018-05-29</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/29/nedb/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/nedb/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:51:10.078Z" itemprop="datePublished">2018-05-29</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/29/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/29/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2018-05-29T15:30:59.837Z" itemprop="datePublished">2018-05-29</time></p>
+                            <p class="item-title"><a href="/2018/05/30/nedb/" class="title">NeDB 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time></p>
                         </div>
                     </li>
                 
@@ -457,16 +401,30 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">5</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
 
             
                 
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NeDB/">NeDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习笔记/">学习笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
 
             
                 
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/NeDB/" style="font-size: 10px;">NeDB</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/学习笔记/" style="font-size: 20px;">学习笔记</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a>
+        </div>
+    </div>
+
 
             
                 
@@ -512,7 +470,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://shookgao.github.io/2018/05/29/hello-world/';
+    var disqus_url = 'https://shookgao.github.io/2018/05/30/ffmpeg/';
     
     (function() {
     var dsq = document.createElement('script');
