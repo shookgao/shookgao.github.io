@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>Hexo 主题 Hueman 学习笔记 | SGBlog</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="学习笔记,Hexo,Hueman" />
+    
+    <meta name="description" content="这个主题是从 WordPress 主题 Hueman 移植过来的，WordPress 版的作者是 AlxMedia，Hexo 版的作者是 ppoffice。特性：响应式布局、主菜单显示分类、自托管网站搜索引擎、自定义评论服务、缩略图、代码高亮、图片廊、自定义侧边栏。我个人挺喜欢这种风格，而且插件什么的也很齐全，所以选择了这款插件做为我自己博客的主题。 目录 安装 配置 插件  安装 在 Hexo">
+<meta name="keywords" content="学习笔记,Hexo,Hueman">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 主题 Hueman 学习笔记">
+<meta property="og:url" content="https://shookgao.github.io/2018/06/05/hexo-theme-hueman/index.html">
+<meta property="og:site_name" content="SGBlog">
+<meta property="og:description" content="这个主题是从 WordPress 主题 Hueman 移植过来的，WordPress 版的作者是 AlxMedia，Hexo 版的作者是 ppoffice。特性：响应式布局、主菜单显示分类、自托管网站搜索引擎、自定义评论服务、缩略图、代码高亮、图片廊、自定义侧边栏。我个人挺喜欢这种风格，而且插件什么的也很齐全，所以选择了这款插件做为我自己博客的主题。 目录 安装 配置 插件  安装 在 Hexo">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p9j57f2ux.bkt.clouddn.com/hueman.jpg">
+<meta property="og:updated_time" content="2018-06-05T16:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 主题 Hueman 学习笔记">
+<meta name="twitter:description" content="这个主题是从 WordPress 主题 Hueman 移植过来的，WordPress 版的作者是 AlxMedia，Hexo 版的作者是 ppoffice。特性：响应式布局、主菜单显示分类、自托管网站搜索引擎、自定义评论服务、缩略图、代码高亮、图片廊、自定义侧边栏。我个人挺喜欢这种风格，而且插件什么的也很齐全，所以选择了这款插件做为我自己博客的主题。 目录 安装 配置 插件  安装 在 Hexo">
+<meta name="twitter:image" content="http://p9j57f2ux.bkt.clouddn.com/hueman.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="SGBlog" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">比昨天的自己更好一点儿...</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/学习笔记/">学习笔记</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/学习笔记/">学习笔记</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-hexo-theme-hueman" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Hexo 主题 Hueman 学习笔记
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/06/05/hexo-theme-hueman/" class="article-date">
+            <time datetime="2018-06-04T16:00:00.000Z" itemprop="datePublished">2018-06-05</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/Hueman/">Hueman</a>, <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="http://p9j57f2ux.bkt.clouddn.com/hueman.jpg" alt=""><br>这个主题是从 WordPress 主题 Hueman 移植过来的，WordPress 版的作者是 <a href="https://github.com/AlxMedia" target="_blank" rel="noopener">AlxMedia</a>，Hexo 版的作者是 <a href="https://github.com/ppoffice" target="_blank" rel="noopener">ppoffice</a>。特性：响应式布局、主菜单显示分类、自托管网站搜索引擎、自定义评论服务、缩略图、代码高亮、图片廊、自定义侧边栏。<br>我个人挺喜欢这种风格，而且插件什么的也很齐全，所以选择了这款插件做为我自己博客的主题。</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#安装">安装</a></li>
+<li><a href="#配置">配置</a></li>
+<li><a href="#插件">插件</a></li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li><p>在 Hexo 网站根目录执行下面的命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑网站的配置文件 _config.yml,修改 theme 字段的值为 hueman 启用主题：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">hueman</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制主题目录中的 _config.yml.example 为 _config.yml。</p>
+</li>
+<li><p>安装本地搜索插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -S hexo-generator-json-content</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新主题：在主题目录中执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Menus</span></span><br><span class="line"><span class="attr">menu:</span>                                              <span class="comment"># 菜单</span></span><br><span class="line"><span class="attr">    Home:</span> <span class="string">/</span>                                        <span class="comment"># 首页路径</span></span><br><span class="line"><span class="attr">    Categories:</span>                                    <span class="comment"># 是否在菜单中使用分类，不使用则删掉此行</span></span><br><span class="line"><span class="attr">    About:</span> <span class="string">/about/index.html</span>                       <span class="comment"># 关于页面路径</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Customize</span></span><br><span class="line"><span class="attr">customize:</span>                                         <span class="comment"># 定制内容</span></span><br><span class="line"><span class="attr">    logo:</span>                                          <span class="comment"># logo</span></span><br><span class="line"><span class="attr">        width:</span> <span class="number">165</span>                                 <span class="comment"># 宽</span></span><br><span class="line"><span class="attr">        height:</span> <span class="number">60</span>                                 <span class="comment"># 高</span></span><br><span class="line"><span class="attr">        url:</span> <span class="string">images/logo.png</span>                       <span class="comment"># logo路径，根目录是./source/css/</span></span><br><span class="line"><span class="attr">    theme_color:</span> <span class="string">'#006bde'</span>                         <span class="comment"># 主题颜色</span></span><br><span class="line"><span class="attr">    highlight:</span> <span class="string">androidstudio</span>                       <span class="comment"># 高亮主题</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">left</span>                                  <span class="comment"># 侧边栏位置，可选 left、right </span></span><br><span class="line"><span class="attr">    thumbnail:</span> <span class="literal">true</span>                                <span class="comment"># 允许文章缩略图</span></span><br><span class="line"><span class="attr">    favicon:</span>                                       <span class="comment"># 网站图标路径</span></span><br><span class="line"><span class="attr">    social_links:</span>                                  <span class="comment"># 关注，更多图标请查看 http://fontawesome.io/icons/#brand</span></span><br><span class="line"><span class="attr">        twitter:</span> <span class="string">/</span>                                 <span class="comment"># </span></span><br><span class="line"><span class="attr">        facebook:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">        google-plus:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">        github:</span> <span class="attr">https://github.com/shookgao</span></span><br><span class="line"><span class="attr">        weibo:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">        rss:</span> <span class="string">/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Widgets</span></span><br><span class="line"><span class="attr">widgets:</span>                                           <span class="comment"># 侧边栏部件，不需要就删除掉</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">catalog</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">recent_posts</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">category</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">archive</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">tag</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">tagcloud</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">links</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Search</span></span><br><span class="line"><span class="attr">search:</span>                                            <span class="comment"># 搜索部件</span></span><br><span class="line"><span class="attr">    insight:</span> <span class="literal">true</span>                                  <span class="comment"># 使用 Insight，需要先安装 `hexo-generator-json-content`</span></span><br><span class="line"><span class="attr">    swiftype:</span>                                      <span class="comment"># 使用 Swiftype，这儿填入Swiftype的安装密钥</span></span><br><span class="line"><span class="attr">    baidu:</span> <span class="literal">false</span>                                   <span class="comment"># 使用百度搜索</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Comment</span></span><br><span class="line"><span class="attr">comment:</span>                                           <span class="comment"># 评论部件</span></span><br><span class="line"><span class="attr">    disqus:</span> <span class="string">hexo-theme-hueman</span> <span class="comment"># enter disqus shortname here</span></span><br><span class="line"><span class="attr">    duoshuo:</span> <span class="comment"># enter duoshuo shortname here</span></span><br><span class="line"><span class="attr">    youyan:</span> <span class="comment"># enter youyan uid here</span></span><br><span class="line"><span class="attr">    facebook:</span> <span class="comment"># enter true to enable</span></span><br><span class="line"><span class="attr">    isso:</span> <span class="comment"># enter the domain name of your own comment isso server eg. comments.example.com</span></span><br><span class="line"><span class="attr">    changyan:</span></span><br><span class="line"><span class="attr">        appId:</span> <span class="comment"># enter the changyan appId here</span></span><br><span class="line"><span class="attr">        appKey:</span> <span class="comment"># enter the changyan appKey here</span></span><br><span class="line"><span class="attr">        on:</span> <span class="comment"># enter true to enable</span></span><br><span class="line"><span class="attr">    valine:</span> <span class="comment"># Valine Comment System https://github.com/xCss/Valine</span></span><br><span class="line"><span class="attr">        on:</span>  <span class="comment"># enter true to enable valine</span></span><br><span class="line"><span class="attr">        appId:</span>  <span class="comment"># enter the leancloud application appId here</span></span><br><span class="line"><span class="attr">        appKey:</span>  <span class="comment"># enter the leancloud application appKey here</span></span><br><span class="line"><span class="attr">        notify:</span> <span class="comment"># enter true to enable &lt;Mail notifier&gt; </span></span><br><span class="line"><span class="attr">        verify:</span> <span class="comment"># enter true to enable &lt;Validation code&gt;</span></span><br><span class="line"><span class="attr">        placeholder:</span> <span class="string">Just</span> <span class="string">Do</span> <span class="string">It</span> <span class="comment"># enter the comment box placeholder</span></span><br><span class="line"><span class="attr">        avatar:</span> <span class="string">identicon</span> <span class="comment"># (''/mm/identicon/monsterid/wavatar/retro/hide), more to see https://valine.js.org/avatar/</span></span><br><span class="line"><span class="attr">        avatar_cdn:</span> <span class="attr">https://gravatar.loli.net/avatar/</span> <span class="comment"># avatar CDN address, default gravatar.loli.net</span></span><br><span class="line"><span class="attr">        pageSize:</span> <span class="number">10</span> <span class="comment"># comments of one page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Share                                            # 分享部件</span></span><br><span class="line"><span class="attr">share:</span> <span class="string">default</span>                                     <span class="comment"># 选项: jiathis, bdshare, addtoany, default</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Plugins</span></span><br><span class="line"><span class="attr">plugins:</span>                                           <span class="comment"># 插件</span></span><br><span class="line"><span class="attr">    lightgallery:</span> <span class="literal">true</span>                             <span class="comment"># 使用相册插件, 选项: true, false</span></span><br><span class="line"><span class="attr">    justifiedgallery:</span> <span class="literal">true</span>                         <span class="comment"># 使用相册插件, 选项: true, false</span></span><br><span class="line"><span class="attr">    google_analytics:</span>                              <span class="comment"># 使用谷歌分析, 填入你谷歌分析的跟踪 ID</span></span><br><span class="line"><span class="attr">    baidu_analytics:</span>                               <span class="comment"># 使用百度分析, 填入你百度的哈希密钥</span></span><br><span class="line"><span class="attr">    bing_site_verification:</span>                        <span class="comment"># 不太清楚干嘛的, 填入 Bing 的验证密钥</span></span><br><span class="line"><span class="attr">    mathjax:</span> <span class="literal">false</span>                                 <span class="comment"># 使用数学表达式插件, 选项: true, false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Miscellaneous</span></span><br><span class="line"><span class="attr">miscellaneous:</span>                                     <span class="comment"># 杂项</span></span><br><span class="line"><span class="attr">    open_graph:</span> <span class="comment"># see http://ogp.me</span></span><br><span class="line"><span class="attr">        fb_app_id:</span></span><br><span class="line"><span class="attr">        fb_admins:</span></span><br><span class="line"><span class="attr">        twitter_id:</span></span><br><span class="line"><span class="attr">        google_plus:</span></span><br><span class="line"><span class="attr">    links:</span></span><br><span class="line"><span class="attr">        Hexo:</span> <span class="attr">http://hexo.io</span></span><br></pre></td></tr></table></figure>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2>
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://shookgao.github.io/2018/06/05/hexo-theme-hueman/" data-id="cji2vudko0001gkvla4aivvor" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="valine-thread"></div>
+
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/shookgao" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/05/30/hexo/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Hexo 学习笔记</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/05/hexo-theme-hueman/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://p9j57f2ux.bkt.clouddn.com/hueman.jpg)" alt="Hexo 主题 Hueman 学习笔记" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/学习笔记/">学习笔记</a></p>
+                            <p class="item-title"><a href="/2018/06/05/hexo-theme-hueman/" class="title">Hexo 主题 Hueman 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-06-04T16:00:00.000Z" itemprop="datePublished">2018-06-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/30/hexo/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://p9j57f2ux.bkt.clouddn.com/hexo.png)" alt="Hexo 学习笔记" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/学习笔记/">学习笔记</a></p>
+                            <p class="item-title"><a href="/2018/05/30/hexo/" class="title">Hexo 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-05-29T16:00:00.000Z" itemprop="datePublished">2018-05-30</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/01/02/ffmpeg/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://p9j57f2ux.bkt.clouddn.com/ffmpeg.jpg)" alt="FFmpeg 学习笔记" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/学习笔记/">学习笔记</a></p>
+                            <p class="item-title"><a href="/2018/01/02/ffmpeg/" class="title">FFmpeg 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2018-01-01T16:00:00.000Z" itemprop="datePublished">2018-01-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/01/01/nedb/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://p9j57f2ux.bkt.clouddn.com/nedb.png)" alt="NeDB 学习笔记" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/学习笔记/">学习笔记</a></p>
+                            <p class="item-title"><a href="/2018/01/01/nedb/" class="title">NeDB 学习笔记</a></p>
+                            <p class="item-date"><time datetime="2017-12-31T16:00:00.000Z" itemprop="datePublished">2018-01-01</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习笔记/">学习笔记</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hueman/">Hueman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NeDB/">NeDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习笔记/">学习笔记</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/NeDB/" style="font-size: 10px;">NeDB</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/学习笔记/" style="font-size: 20px;">学习笔记</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Shook Gao</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+        new Valine({
+            el: '#valine-thread' ,
+            notify:false,
+            verify:false,
+            app_id: 'HdreMfNhQ0AAgQHto6v4V1V2-gzGzoHsz',
+            app_key: '1CNL7yHgWWVTn88WVyTvLt3I',
+            placeholder: '说点儿什么吧...',
+            pageSize: '10',
+            avatar: 'identicon',
+            avatar_cdn:  'https://gravatar.loli.net/avatar/'
+        });
+    </script>
+
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
