@@ -6,26 +6,17 @@
     
 
     
-    <title>FFmpeg 学习笔记 | SGBlog</title>
+    <title>标签：: localStorage | SGBlog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="ffmpeg,学习笔记" />
-    
-    <meta name="description" content="语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4; done;">
-<meta name="keywords" content="ffmpeg,学习笔记">
-<meta property="og:type" content="article">
-<meta property="og:title" content="FFmpeg 学习笔记">
-<meta property="og:url" content="https://shookgao.github.io/2018/01/02/ffmpeg/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="SGBlog">
+<meta property="og:url" content="https://shookgao.github.io/tags/localStorage/index.html">
 <meta property="og:site_name" content="SGBlog">
-<meta property="og:description" content="语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4; done;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://p9j57f2ux.bkt.clouddn.com/ffmpeg.png">
-<meta property="og:updated_time" content="2018-06-07T03:34:50.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FFmpeg 学习笔记">
-<meta name="twitter:description" content="语法 常规  1ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4  批处理  1for f in `ls *.avi`; do ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac $&amp;#123;f%.*&amp;#125;.mp4; done;">
-<meta name="twitter:image" content="http://p9j57f2ux.bkt.clouddn.com/ffmpeg.png">
+<meta name="twitter:title" content="SGBlog">
     
 
     
@@ -140,133 +131,80 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/学习笔记/">学习笔记</a>
+    <i class="icon fa fa-tag"></i>标签：: <em>localStorage</em>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-ffmpeg" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
+                            
+
+    
+    
         
-            <header class="article-header">
-                
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/06/13/localstorage/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://p9j57f2ux.bkt.clouddn.com/localstorage.jpg)" alt="localStorage 学习笔记" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+            </div>
+            <div class="date"><time datetime="2018-06-12T16:00:00.000Z" itemprop="datePublished">2018-06-13</time></div>
+        </div>
+        
     
         <h1 class="article-title" itemprop="name">
-        FFmpeg 学习笔记
+        <a href="/2018/06/13/localstorage/">localStorage 学习笔记</a>
         </h1>
     
 
-            </header>
-        
-        
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <a href="/2018/01/02/ffmpeg/" class="article-date">
-            <time datetime="2018-01-01T16:00:00.000Z" itemprop="datePublished">2018-01-02</time>
-        </a>
-    </div>
+        <p class="article-excerpt">
+            localStorage 是 Web Storage 的一部分，用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的；Web Storage 的另一部分是  sessionStorage，语法都一样，区别在于 sessionStorage 退出会话后数据就过期了。Web Storage 并不安全，但可以用来存储一些不太敏感的数据。
+目录
+增加
+删除
+修改
+查询
+复杂数据处理
 
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/ffmpeg/">ffmpeg</a>, <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
-    </div>
-
-            </div>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-            <p><img src="http://p9j57f2ux.bkt.clouddn.com/ffmpeg.png" alt=""></p>
-<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
-<li>常规</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i a.avi -preset ultrafast -crf 18 -c:v libx265 -c:a aac a.mp4</span><br></pre></td></tr></table></figure>
-<ul>
-<li>批处理</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> `ls *.avi`; <span class="keyword">do</span> ffmpeg -i f -preset ultrafast -crf 18 -c:v libx265 -c:a aac <span class="variable">$&#123;f%.*&#125;</span>.mp4; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>合并</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先建立filelist.txt文件，文件内每个`file "a.avi"`占一行，有多少填多少，然后执行</span></span><br><span class="line">ffmpeg -f concat -i filelist.txt -c copy a.mp4</span><br></pre></td></tr></table></figure>
-        </div>
-        <footer class="article-footer">
-            
-
-
-
-    <a data-url="https://shookgao.github.io/2018/01/02/ffmpeg/" data-id="cjicrn1mo0000vcvlx822z6vd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-        </footer>
+增加
+语
+        </p>
     </div>
 </article>
-
-    <section id="comments">
     
-        
-    <div id="valine-thread"></div>
-
-
+        </div>
     
-    </section>
+
+
+    </div></section>
+
 
 
                         </div>
@@ -327,29 +265,6 @@
             
         </ul>
     </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/2018/05/30/hexo/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            Hexo 学习笔记
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-    
-    
-        <a href="/2018/01/01/nedb/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title">NeDB 学习笔记</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
-    
-</nav>
-
     
     <div class="widgets-container">
         
